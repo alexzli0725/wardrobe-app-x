@@ -21,9 +21,7 @@ app.use(express.json());
 const hf = new HfInference("");
 
 mongoose
-  .connect(
-    "mongodb+srv://alexzli0725:alexzli0725@cluster0.50mgucr.mongodb.net/"
-  )
+  .connect("")
   .then(() => console.log("Connected to MongoDB"))
   .catch((err) => console.log("Error connecting to MongoDB", err));
 
